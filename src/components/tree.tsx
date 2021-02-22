@@ -37,6 +37,8 @@ const Tree: FunctionComponent<ITree> = (props) => {
     }
   }, [])
 
+
+
   const childrenJSX = []
   for (const key in children) {
     if (Object.prototype.hasOwnProperty.call(children, key)) {
@@ -49,7 +51,7 @@ const Tree: FunctionComponent<ITree> = (props) => {
   return (
     <div class="tree">
       <div class="tree-body">
-        <div class="tree-name" onClick={handleCollapse}>{name} {id} {parentId}</div>
+        <div class="tree-name" onClick={handleCollapse}> {name} </div>
         <div>
           <button onClick={handleAdd} class="ml btn">Add</button>
           {id !== 'root' &&
