@@ -47,12 +47,7 @@ const config: C = {
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
-    alias: {
-      react: 'preact/compat',
-      'react-dom/test-utils': 'preact/test-utils',
-      'react-dom': 'preact/compat',
-    }
+    extensions: ['.tsx', '.ts', '.js']
   },
   devServer: {
     historyApiFallback: true,
